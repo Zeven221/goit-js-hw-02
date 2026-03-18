@@ -1,5 +1,6 @@
 function checkForSpam(message){
-return message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale')
+const normalized = message.toLowerCase()
+return normalized.includes('spam') || normalized.includes('sale')
 }
 
 

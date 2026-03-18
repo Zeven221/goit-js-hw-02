@@ -1,6 +1,6 @@
-function makeTransaction(quantity,price,balance){
-  let totalPrice = price * quantity;
-  if(totalPrice <= balance){
+function makeTransaction(quantity,pricePerDroid ,customerCredits){
+  let totalPrice = pricePerDroid * quantity;
+  if(totalPrice <= customerCredits){
     return `You ordered ${quantity} droids worth ${totalPrice} credits!`
   }
   else{
